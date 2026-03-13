@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Options"
+        android:layout_gravity="end" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Digital transformation is the process of using digital technologies to create new — or modify existing — business processes, culture, and customer experiences to meet changing business and market requirements. This reimagining of business in the digital age is digital transformation.\n\nIt transcends traditional roles like sales, marketing, and customer service. Instead, digital transformation begins and ends with how you think about, and engage with, customers. As we move from paper to spreadsheets to smart applications for managing our business, we have the chance to reimagine how we do business — how we engage our customers — with digital technology on our side.\n\nFor small businesses just getting started, there’s no need to set up your business processes and transform them later. You can future-proof your organization from the very beginning. Building a 21st-century business on sticks and bricks and paper just isn’t sustainable. Thinking, planning, and building digitally sets you up to be agile, flexible, and ready to grow."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+    </ScrollView>
+
+</LinearLayout>

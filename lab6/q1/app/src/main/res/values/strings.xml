@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">XYZ FITNESS CENTRE</string>
+    <string name="menu_workout_plans">Workout Plans</string>
+    <string name="menu_trainers">Trainers</string>
+    <string name="menu_membership">Membership</string>
+    <string name="menu_homepage">Homepage</string>
+    <string name="menu_about_us">About Us</string>
+    <string name="menu_contact_us">Contact Us</string>
+
+    <string name="welcome_message">Welcome to XYZ Fitness Center!\n\nYour journey to a healthier lifestyle starts here. Explore our plans and meet our trainers using the menu.</string>
+    <string name="workout_plans_content">Workout Plans:\n\n• Weight Loss: Intense cardio and diet plan\n• Cardio: Improve heart health and stamina\n• Muscle Building: Strength training and protein intake\n• Yoga: Flexibility and mental peace</string>
+    <string name="trainers_content">Our Expert Trainers:\n\n1. John Doe\nSpecialization: Weight Loss &amp; Nutrition\n\n2. Jane Smith\nSpecialization: Cardio &amp; HIIT\n\n3. Mike Ross\nSpecialization: Powerlifting &amp; Strength</string>
+    <string name="membership_content">Membership Packages:\n\n• Basic: $20/month (Gym access)\n• Pro: $50/month (Gym + Group Classes)\n• Elite: $80/month (Gym + Personal Trainer + Spa)</string>
+    <string name="about_us_content">About Us:\n\nFounded in 2010, XYZ Fitness Center is a world-class facility equipped with the latest technology and expert guidance to help you reach your fitness goals.</string>
+    <string name="contact_us_content">Contact Us:\n\nEmail: contact@xyzfitness.com\nPhone: +1 234 567 890\nAddress: 123 Fitness St, Health City</string>
+    <string name="trainer_image_desc">Trainer Photos</string>
+</resources>

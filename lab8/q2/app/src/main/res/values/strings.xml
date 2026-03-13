@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grocery</string>
+    <string name="total_cost_label">Total Cost: %1$.2f</string>
+    <string name="item_added">Item added to DB</string>
+    <string name="enter_details">Please enter all details</string>
+    <string name="added_to_total">Added %1$s to total</string>
+    <string name="total_reset">Total reset</string>
+    <string name="error_adding">Error adding item</string>
+    <string name="no_items">No items selected</string>
+</resources>

@@ -1,5 +1,7 @@
 package com.example.urlapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -42,13 +44,15 @@ public class MainActivity extends AppCompatActivity {
                 String url = view.getText().toString();
 
                 if (url.isEmpty()) {
-                    Toast.makeText(this, "Please enter a URL", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please enter a URL", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (!url.startsWith("http://") && !url.startsWith("https://")) {
                     url = "https://" + url;
                 }
 
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
             }
         });
     }
