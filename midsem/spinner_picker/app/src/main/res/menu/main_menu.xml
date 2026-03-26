@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_movie"
+        android:title="Add Movie"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/add_theatre"
+        android:title="Add Theatre"
+        app:showAsAction="never" />
+</menu>

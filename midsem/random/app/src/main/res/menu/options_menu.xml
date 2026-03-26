@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_workout_plans"
+        android:title="Workout Plans" />
+    <item
+        android:id="@+id/menu_trainers"
+        android:title="Trainers" />
+    <item
+        android:id="@+id/menu_membership"
+        android:title="Membership" />
+</menu>
