@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Restaurant Order"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section 1: Order Type -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Type"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgOrderType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbDineIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dine-In" />
+
+                <RadioButton
+                    android:id="@+id/rbDelivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery" />
+
+                <RadioButton
+                    android:id="@+id/rbTakeout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Takeout" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delivery Address"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etTableNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Table Number"
+                android:inputType="number"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/cbPackingCharges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Packing Charges" />
+
+            <!-- Section 2: Cuisine Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select Cuisine"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerCuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cbCheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra Cheese" />
+
+            <CheckBox
+                android:id="@+id/cbSauce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra Sauce" />
+
+            <CheckBox
+                android:id="@+id/cbGarlicBread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garlic Bread" />
+
+            <CheckBox
+                android:id="@+id/cbSpices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra Spices" />
+
+            <!-- Section 3: Portion Size & Spice Level -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Portion Size"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgPortionSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small" />
+
+                <RadioButton
+                    android:id="@+id/rbMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium" />
+
+                <RadioButton
+                    android:id="@+id/rbLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvSpiceLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spice Level: 0 / 5" />
+
+            <SeekBar
+                android:id="@+id/seekBarSpice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5" />
+
+            <!-- Section 4: Payment Method -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Payment Method"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cash" />
+
+                <RadioButton
+                    android:id="@+id/rbCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card" />
+
+                <RadioButton
+                    android:id="@+id/rbUPI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPI" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etUPI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="UPI ID"
+                android:visibility="gone" />
+
+            <!-- Section 5: Schedule -->
+            <Button
+                android:id="@+id/btnSchedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Schedule Pickup / Delivery" />
+
+            <TextView
+                android:id="@+id/tvScheduledTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Scheduled" />
+
+            <!-- Section 6: List & Priority -->
+            <ToggleButton
+                android:id="@+id/tbPriority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textOff="Standard"
+                android:textOn="Priority Order" />
+
+            <Button
+                android:id="@+id/btnAddItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Item to Order" />
+
+            <ListView
+                android:id="@+id/listViewOrder"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnPlaceOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Place Order" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
