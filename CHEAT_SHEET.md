@@ -1,3 +1,10 @@
+. Fix the Layout (activity_main.xml)
+Add android:fitsSystemWindows="true" to your root ConstraintLayout. This automatically adds padding at the top to clear the notch and status bar.
+activity_main.xml
++1
+I have applied the fix by adding android:fitsSystemWindows="true" to your activity_main.xml.
+
+
 # 📱 Android MAD Lab — Complete Cheat Sheet
 > ICT 3268 | MIT Manipal | Lab Exam Reference
 
