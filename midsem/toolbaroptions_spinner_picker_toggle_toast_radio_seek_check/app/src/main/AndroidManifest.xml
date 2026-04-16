@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Toolbaroptions_spinner_picker_toggle_toast_radio_seek_check">
         <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
